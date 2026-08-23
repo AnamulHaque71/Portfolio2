@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kazi Anamul Haque | Aspiring Full-Stack Developer & CS Student</title>
+  <meta name="description" content="Personal Portfolio of Kazi Anamul Haque - Computer Science student at Daffodil International University, aspiring Full-Stack Developer.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <a href="#hero" class="logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">Anamul.dev</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-cta-mobile">
+          <a href="#contact" class="btn btn-primary btn-sm">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Switch -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta-desktop">Contact Me</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero section" id="hero">
+      <div class="hero-bg-glow"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge hero-badge">
+            <span class="pulse-dot"></span>
+            Open to internships & opportunities
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Kazi Anamul Haque</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            I am an <span class="typing-text" id="typing-text"></span>
+            <span class="cursor">&nbsp;</span>
+          </h2>
+          <p class="hero-description">
+            Computer Science student at Daffodil International University with a strong foundation in programming and a passion for building scalable, user-friendly web applications. Aspiring full-stack developer eager to create impactful digital solutions.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Projects</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <span>Contact Me</span>
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+            <a href="#" class="btn btn-ghost" id="download-cv-btn" onclick="alert('Resume download initiated (demo)!'); return false;">
+              <i class="fa-solid fa-download"></i>
+              <span>Download CV</span>
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <span class="socials-label">Connect with me:</span>
+            <div class="social-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="mailto:anamulhaque9455@gmail.com" class="social-link" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <div class="avatar-glow"></div>
+            <div class="avatar-ring"></div>
+            <div class="avatar-img-box">
+              <img src="Resume-main/img/232-15-210.jpg" alt="Kazi Anamul Haque - Profile Photo" class="avatar-img">
+            </div>
+            
+            <!-- Floating Achievement Badges -->
+            <div class="floating-badge badge-1">
+              <div class="floating-badge-icon code-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="floating-badge-text">
+                <span class="badge-title">CGPA 4.00</span>
+                <span class="badge-sub">Academic Excellence</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-2">
+              <div class="floating-badge-icon rocket-icon">
+                <i class="fa-solid fa-trophy"></i>
+              </div>
+              <div class="floating-badge-text">
+                <span class="badge-title">Award Winner</span>
+                <span class="badge-sub">Takeoff Competition</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">01. About Me</span>
+          <h2 class="section-title">A passionate CS student on the path to becoming a full-stack developer</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-info">
+            <p class="about-lead">
+              Hello! I'm Kazi Anamul Haque, a Computer Science & Engineering student at Daffodil International University, Bangladesh. I'm passionate about technology and driven to build impactful software solutions.
+            </p>
+            <p class="about-body">
+              My goal is to become a skilled full-stack developer. I aim to continuously improve in both front-end and back-end development, leveraging modern frameworks and tools to build scalable, user-friendly applications that solve real-world problems.
+            </p>
+            <p class="about-body">
+              I have a strong academic foundation with a perfect 4.00 CGPA. I've completed professional certifications in Python Machine Learning (EDGE) and Microsoft Fabric, and have hands-on experience building projects in C, Java, Python, and web technologies.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <i class="fa-solid fa-check-circle highlight-icon"></i>
+                <span>Strong programming fundamentals</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-check-circle highlight-icon"></i>
+                <span>Machine Learning certified</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-check-circle highlight-icon"></i>
+                <span>Problem solving & data structures</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-check-circle highlight-icon"></i>
+                <span>Aspiring full-stack developer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-stats-container">
+            <div class="stats-card">
+              <div class="stat-item">
+                <div class="stat-number" data-target="4">0</div>
+                <div class="stat-plus">.00</div>
+                <div class="stat-label">CGPA at DIU</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" data-target="2">0</div>
+                <div class="stat-plus">+</div>
+                <div class="stat-label">Projects Built</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" data-target="3">0</div>
+                <div class="stat-plus">+</div>
+                <div class="stat-label">Certifications Earned</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" data-target="5">0</div>
+                <div class="stat-plus">+</div>
+                <div class="stat-label">Languages Learned</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">02. Tech Stack</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming Languages -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-frontend">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h3 class="category-title">Programming Languages</h3>
+            </div>
+            <p class="category-desc">Strong foundation in core programming languages and paradigms.</p>
+            <div class="skill-tags">
+              <span class="skill-tag"><i class="fa-solid fa-c"></i> C Programming</span>
+              <span class="skill-tag"><i class="fa-brands fa-java"></i> Java (OOP)</span>
+              <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="skill-tag"><i class="fa-solid fa-terminal"></i> Problem Solving</span>
+              <span class="skill-tag"><i class="fa-solid fa-sitemap"></i> Data Structures</span>
+              <span class="skill-tag"><i class="fa-solid fa-diagram-project"></i> Algorithms</span>
+            </div>
+          </div>
+
+          <!-- Web Development -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-backend">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <h3 class="category-title">Web Development</h3>
+            </div>
+            <p class="category-desc">Building responsive, modern websites and user interfaces.</p>
+            <div class="skill-tags">
+              <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5</span>
+              <span class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+              <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+              <span class="skill-tag"><i class="fa-solid fa-mobile-screen"></i> Responsive Design</span>
+              <span class="skill-tag"><i class="fa-solid fa-palette"></i> UI/UX Basics</span>
+              <span class="skill-tag"><i class="fa-solid fa-layer-group"></i> Frontend Dev</span>
+            </div>
+          </div>
+
+          <!-- Machine Learning & Data -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-devops">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <h3 class="category-title">Machine Learning & Data</h3>
+            </div>
+            <p class="category-desc">Certified ML practitioner with hands-on data analytics skills.</p>
+            <div class="skill-tags">
+              <span class="skill-tag"><i class="fa-brands fa-python"></i> Python ML (EDGE)</span>
+              <span class="skill-tag"><i class="fa-brands fa-microsoft"></i> Microsoft Fabric</span>
+              <span class="skill-tag"><i class="fa-solid fa-chart-line"></i> Data Analytics</span>
+              <span class="skill-tag"><i class="fa-solid fa-robot"></i> ML Fundamentals</span>
+              <span class="skill-tag"><i class="fa-solid fa-database"></i> Data Processing</span>
+              <span class="skill-tag"><i class="fa-solid fa-chart-bar"></i> Data Visualization</span>
+            </div>
+          </div>
+
+          <!-- Tools & Soft Skills -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-tools">
+                <i class="fa-solid fa-wrench"></i>
+              </div>
+              <h3 class="category-title">Tools & Soft Skills</h3>
+            </div>
+            <p class="category-desc">Development tools and professional skills for effective teamwork.</p>
+            <div class="skill-tags">
+              <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+              <span class="skill-tag"><i class="fa-solid fa-laptop-code"></i> VS Code</span>
+              <span class="skill-tag"><i class="fa-solid fa-people-group"></i> Teamwork</span>
+              <span class="skill-tag"><i class="fa-solid fa-lightbulb"></i> Quick Learner</span>
+              <span class="skill-tag"><i class="fa-solid fa-comments"></i> Communication</span>
+              <span class="skill-tag"><i class="fa-solid fa-puzzle-piece"></i> Problem Solving</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">03. Portfolio</span>
+          <h2 class="section-title">My Projects</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="console">Console Apps</button>
+          <button class="filter-btn" data-filter="web">Web Projects</button>
+          <button class="filter-btn" data-filter="ml">ML / Data</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project 1: Quiz App -->
+          <article class="project-card" data-category="console" data-id="1">
+            <div class="project-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=800&auto=format&fit=crop&q=80" alt="Quiz App" class="project-img">
+              <div class="project-overlay">
+                <button class="btn-icon view-project-btn" data-id="1" aria-label="Quick View Project">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-cat">Console App</span>
+                <span class="project-year">Fall 2023</span>
+              </div>
+              <h3 class="project-title">Quiz App</h3>
+              <p class="project-desc">
+                A level-based quiz game developed as a console application using C programming. Features multiple difficulty levels with progressive challenges and score tracking.
+              </p>
+              <div class="project-tech-list">
+                <span class="tech-badge">C</span>
+                <span class="tech-badge">Console App</span>
+                <span class="tech-badge">Logic Building</span>
+                <span class="tech-badge">File I/O</span>
+              </div>
+              <div class="project-footer">
+                <button class="project-link-btn view-project-btn" data-id="1">
+                  <span>View Details</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <div class="project-external-links">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="ext-link" aria-label="GitHub Repository">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Guessing Game -->
+          <article class="project-card" data-category="console" data-id="2">
+            <div class="project-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&auto=format&fit=crop&q=80" alt="Guessing Game" class="project-img">
+              <div class="project-overlay">
+                <button class="btn-icon view-project-btn" data-id="2" aria-label="Quick View Project">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-cat">Console App</span>
+                <span class="project-year">Spring 2024</span>
+              </div>
+              <h3 class="project-title">Guessing Game (Akinator-Style)</h3>
+              <p class="project-desc">
+                A character guessing bot inspired by Akinator. Developed using basic data structures in C, featuring a decision tree algorithm to narrow down guesses.
+              </p>
+              <div class="project-tech-list">
+                <span class="tech-badge">C</span>
+                <span class="tech-badge">Data Structures</span>
+                <span class="tech-badge">Decision Trees</span>
+                <span class="tech-badge">Algorithms</span>
+              </div>
+              <div class="project-footer">
+                <button class="project-link-btn view-project-btn" data-id="2">
+                  <span>View Details</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <div class="project-external-links">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="ext-link" aria-label="GitHub Repository">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Portfolio Website -->
+          <article class="project-card" data-category="web" data-id="3">
+            <div class="project-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=800&auto=format&fit=crop&q=80" alt="Portfolio Website" class="project-img">
+              <div class="project-overlay">
+                <button class="btn-icon view-project-btn" data-id="3" aria-label="Quick View Project">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-cat">Web Project</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3 class="project-title">Personal Portfolio Website</h3>
+              <p class="project-desc">
+                A modern, responsive portfolio website built from scratch using HTML, CSS, and JavaScript. Features dark/light mode, interactive modals, and smooth animations.
+              </p>
+              <div class="project-tech-list">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Responsive</span>
+              </div>
+              <div class="project-footer">
+                <button class="project-link-btn view-project-btn" data-id="3">
+                  <span>View Details</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <div class="project-external-links">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="ext-link" aria-label="GitHub Repository">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Python ML Course Project -->
+          <article class="project-card" data-category="ml" data-id="4">
+            <div class="project-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&auto=format&fit=crop&q=80" alt="Machine Learning Project" class="project-img">
+              <div class="project-overlay">
+                <button class="btn-icon view-project-btn" data-id="4" aria-label="Quick View Project">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-cat">ML / Data</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 class="project-title">EDGE Python ML Course Work</h3>
+              <p class="project-desc">
+                Hands-on machine learning projects completed as part of the EDGE Python ML course certification. Includes data preprocessing, model training, and evaluation.
+              </p>
+              <div class="project-tech-list">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Machine Learning</span>
+                <span class="tech-badge">Data Science</span>
+                <span class="tech-badge">EDGE Cert</span>
+              </div>
+              <div class="project-footer">
+                <button class="project-link-btn view-project-btn" data-id="4">
+                  <span>View Details</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <div class="project-external-links">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="ext-link" aria-label="GitHub Repository">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Timeline Section -->
+    <section class="experience section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">04. Journey</span>
+          <h2 class="section-title">Education & Achievements</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Item 1: Current Education -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card education-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">B.Sc. in Computer Science & Engineering</h3>
+                  <span class="timeline-company">Daffodil International University</span>
+                </div>
+                <span class="timeline-date">2023 - 2027 (Expected)</span>
+              </div>
+              <p class="timeline-desc">
+                Currently pursuing my Bachelor's degree in Computer Science & Engineering with a perfect CGPA of 4.00. Focused on building a strong foundation in programming, data structures, algorithms, and software development.
+              </p>
+              <div class="timeline-skills">
+                <span>CGPA: 4.00</span>
+                <span>Computer Science</span>
+                <span>Engineering</span>
+                <span>DSA</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: EDGE Python ML -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">EDGE Python ML Course</h3>
+                  <span class="timeline-company">Professional Certification</span>
+                </div>
+                <span class="timeline-date">2024</span>
+              </div>
+              <p class="timeline-desc">
+                Successfully completed the EDGE Python Machine Learning course, gaining practical skills in data preprocessing, model training, evaluation techniques, and Python-based ML workflows.
+              </p>
+              <div class="timeline-skills">
+                <span>Python</span>
+                <span>Machine Learning</span>
+                <span>Data Science</span>
+                <span>EDGE Certified</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: Microsoft Fabric -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Microsoft Fabric Certification</h3>
+                  <span class="timeline-company">Microsoft</span>
+                </div>
+                <span class="timeline-date">2024</span>
+              </div>
+              <p class="timeline-desc">
+                Completed Microsoft Fabric course, learning about unified data analytics platforms, data engineering, business intelligence, and real-time analytics in the Microsoft ecosystem.
+              </p>
+              <div class="timeline-skills">
+                <span>Microsoft Fabric</span>
+                <span>Data Analytics</span>
+                <span>BI</span>
+                <span>Cloud</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4: Award -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">🏅 5th Place — "Takeoff" Competition</h3>
+                  <span class="timeline-company">Daffodil International University</span>
+                </div>
+                <span class="timeline-date">Fall 2023</span>
+              </div>
+              <p class="timeline-desc">
+                Achieved 5th position in the competitive "Takeoff" programming competition, demonstrating strong problem-solving skills and technical knowledge among peers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Goals Section (replacing Testimonials) -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">05. My Vision</span>
+          <h2 class="section-title">Goals & Aspirations</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="quote-icon"><i class="fa-solid fa-bullseye"></i></div>
+            <p class="testimonial-text">
+              "Become a skilled full-stack developer by mastering both front-end and back-end technologies, and build scalable, user-friendly applications that solve real-world problems."
+            </p>
+            <div class="testimonial-author">
+              <img src="Resume-main/img/232-15-210.jpg" alt="Kazi Anamul Haque" class="author-avatar">
+              <div class="author-info">
+                <h4 class="author-name">Short-Term Goal</h4>
+                <p class="author-title">Master Full-Stack Development</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="quote-icon"><i class="fa-solid fa-rocket"></i></div>
+            <p class="testimonial-text">
+              "Leverage my Machine Learning and Data Analytics skills alongside web development to create intelligent, data-driven applications that push the boundaries of modern technology."
+            </p>
+            <div class="testimonial-author">
+              <img src="Resume-main/img/232-15-210.jpg" alt="Kazi Anamul Haque" class="author-avatar">
+              <div class="author-info">
+                <h4 class="author-name">Mid-Term Goal</h4>
+                <p class="author-title">Merge ML with Web Development</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="quote-icon"><i class="fa-solid fa-star"></i></div>
+            <p class="testimonial-text">
+              "Contribute to impactful open-source projects, mentor aspiring developers, and build innovative products that make a positive difference in the tech industry and community."
+            </p>
+            <div class="testimonial-author">
+              <img src="Resume-main/img/232-15-210.jpg" alt="Kazi Anamul Haque" class="author-avatar">
+              <div class="author-info">
+                <h4 class="author-name">Long-Term Vision</h4>
+                <p class="author-title">Give Back & Innovate</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">06. Get in Touch</span>
+          <h2 class="section-title">Let's Connect</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">
+            Whether you have an internship opportunity, a project collaboration, or just want to connect, feel free to reach out!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-label">Email</span>
+                <a href="mailto:anamulhaque9455@gmail.com" class="contact-value">anamulhaque9455@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-label">Phone</span>
+                <a href="tel:+8801703989455" class="contact-value">+880 1703-989455</a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-label">Location</span>
+                <span class="contact-value">Bangladesh</span>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fa-solid fa-university"></i>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-label">University</span>
+                <span class="contact-value">Daffodil International University</span>
+              </div>
+            </div>
+
+            <div class="contact-availability">
+              <div class="availability-indicator">
+                <span class="pulse-dot"></span>
+                <strong>Open to internships & collaborations</strong>
+              </div>
+              <p class="availability-note">Expected graduation: Summer 2027</p>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper">
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name" class="form-label">Your Name <span class="required">*</span></label>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Jane Doe" required>
+                  <span class="error-msg" id="name-error">Please enter your name.</span>
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Email Address <span class="required">*</span></label>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="e.g. jane@example.com" required>
+                  <span class="error-msg" id="email-error">Please enter a valid email.</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject <span class="required">*</span></label>
+                <input type="text" id="subject" name="subject" class="form-input" placeholder="e.g. Internship Opportunity / Collaboration" required>
+                <span class="error-msg" id="subject-error">Please enter a subject.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message <span class="required">*</span></label>
+                <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Tell me about the opportunity or project..." required></textarea>
+                <span class="error-msg" id="message-error">Please enter your message (min. 10 characters).</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block submit-btn" id="submit-btn">
+                <span class="btn-text">Send Message</span>
+                <i class="fa-solid fa-paper-plane btn-icon-send"></i>
+                <div class="spinner" id="form-spinner"></div>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-text">Anamul.dev</span>
+          <span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-tagline">Aspiring full-stack developer building the future, one line of code at a time.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> Kazi Anamul Haque. Crafted with <i class="fa-solid fa-heart heart-icon"></i> using HTML, CSS & JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Scroll back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Project Details Modal -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog">
+    <div class="modal-container">
+      <button class="modal-close" id="modal-close" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-body" id="modal-body">
+        <!-- Content dynamically injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
